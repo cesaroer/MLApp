@@ -28,10 +28,35 @@ class ViewController: UIViewController {
     //IBActions
     @IBAction func takePicBtnTapped(_ sender: Any) {
         
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+         
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .camera
+            imagePicker.allowsEditing = true
+            
+            self.present(imagePicker, animated: true, completion: nil)
+        }else {
+            
+            print("No se pudo obtener acceso a la galeria")
+        }
+        
     }
     
     @IBAction func galleryBtnTapped(_ sender: Any) {
         
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+         
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .photoLibrary
+            imagePicker.allowsEditing = true
+            
+            self.present(imagePicker, animated: true, completion: nil)
+        }else {
+            
+            print("No se pudo obtener acceso a la galeria")
+        }
     }
     
     //Functions
@@ -81,8 +106,20 @@ class ViewController: UIViewController {
     }
     
     
-    //System Functions
+}
 
-
+extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let pickedImage = info[.originalImage] as? UIImage {
+            
+            self.dataImageView.contentMode = .scaleAspectFit
+            self.dataImageView.image = pickedImage
+        }
+        
+        picker.dismiss(animated: true, completion: nil)
+        detectarImagenes()
+    }
 }
 

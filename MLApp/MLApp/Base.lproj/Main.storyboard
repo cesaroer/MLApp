@@ -24,7 +24,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zz-PV-8GB">
-                                <rect key="frame" x="42" y="776" width="78" height="30"/>
+                                <rect key="frame" x="42" y="806" width="78" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="78" id="82H-ZL-82I"/>
                                     <constraint firstAttribute="height" constant="30" id="SHP-6w-zbn"/>
@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2C2-zx-nlb">
-                                <rect key="frame" x="279" y="776" width="115" height="30"/>
+                                <rect key="frame" x="279" y="806" width="115" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="RyS-DD-cLJ"/>
                                     <constraint firstAttribute="width" constant="115" id="hOb-U0-0mQ"/>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargando..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Rbq-3z-WHi">
-                                <rect key="frame" x="20" y="673" width="374" height="95"/>
+                                <rect key="frame" x="20" y="673" width="374" height="125"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -57,10 +57,10 @@
                         <constraints>
                             <constraint firstItem="Rbq-3z-WHi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Tt-Kv-xkc"/>
                             <constraint firstItem="0Eu-HD-kbz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6Pj-UN-fLn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Zz-PV-8GB" secondAttribute="bottom" constant="56" id="6rZ-ds-Ng3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Zz-PV-8GB" secondAttribute="bottom" constant="26" id="6rZ-ds-Ng3"/>
                             <constraint firstItem="0Eu-HD-kbz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F36-aB-ChA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rbq-3z-WHi" secondAttribute="trailing" constant="20" id="Gj4-yu-qU8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2C2-zx-nlb" secondAttribute="bottom" constant="56" id="QBW-zy-cW2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2C2-zx-nlb" secondAttribute="bottom" constant="26" id="QBW-zy-cW2"/>
                             <constraint firstItem="2Zz-PV-8GB" firstAttribute="top" secondItem="Rbq-3z-WHi" secondAttribute="bottom" constant="8" symbolic="YES" id="eim-Nj-YPb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2C2-zx-nlb" secondAttribute="trailing" constant="20" id="fsk-xR-tlF"/>
                             <constraint firstItem="2Zz-PV-8GB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="hOP-pz-qsX"/>
