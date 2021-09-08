@@ -80,7 +80,7 @@ class ViewController: UIViewController {
             }
             
             DispatchQueue.main.async {
-                self.dataLabel.text = "\(primerResultado.identifier)"
+                self.dataLabel.text = "Resultado: \(primerResultado.identifier) \n exactitud:  \(primerResultado.confidence * 100)%"
             }
         }
         
